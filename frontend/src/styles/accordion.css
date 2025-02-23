@@ -1,0 +1,82 @@
+ /* Accordion container */
+ .accordion {
+    width: 90%;
+    max-width: 600px;
+    background: #ffffff;
+    /* background: #; */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Accordion items */
+  .accordion-item {
+    border-top: 1px solid #eee;
+  }
+
+  /* First item border fix */
+  .accordion-item:first-child {
+    border-top: none;
+  }
+
+  /* Checkbox styling for accordion behavior */
+  .accordion-item input[type="checkbox"] {
+    display: none;
+  }
+
+  /* Accordion label styling */
+  .accordion-item label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: transparent;
+    /*color: white;*/
+    transition: background 0.3s ease;
+    margin: 10px;
+  }
+
+  /* Hover effect on label */
+  .accordion-item label:hover {
+    /*background: #0056b3;*/
+  }
+
+  /* Accordion content styling */
+  .accordion-item .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: #f9f9f9;
+    padding: 0 16px;
+        transition: max-height 0.5s,padding 0.5s;
+
+  }
+
+  /* Checkbox state for open content */
+  .accordion-item input[type="checkbox"]:checked ~ .content {
+    max-height: 200px;
+    padding: 16px;
+  }
+
+  /* Icon styling */
+  .accordion-item label::after {
+    content: "+";
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  /* Rotate icon when open */
+  .accordion-item input[type="checkbox"]:checked + label::after {
+    transform: rotate(45deg);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .accordion-item label {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  }

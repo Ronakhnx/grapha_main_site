@@ -1,0 +1,473 @@
+
+.membership_container {
+    margin: 6% 0px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    padding: 0px 5%;
+}
+
+
+.call_container {
+    height: 500px;
+    width: 320px;
+    background-color: black;
+    border-radius: 10px;
+    position: relative;
+}
+
+.inner_membership_container {
+    height: 500px;
+    width: 550px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.join_title {
+    color: #fff;
+    margin-top: 20%;
+    margin-right: 50%;
+    font-size: 50px;
+}
+
+.call_container img {
+    height: 80px;
+    width: 250px;
+    position: absolute;
+    left: 20px;
+    top: 140px;
+}
+
+.detail_container {
+    height: 180px;
+    width: 300px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-top: 30%;
+    color: #fff;
+}
+
+.point{
+    color: #000;
+}
+
+.detail_container h4 {
+    padding-top: 20px;
+}
+
+.call_container button {
+    border: 1px solid #fff;
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.call_container button:hover {
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+.inner_membership_title {
+    color: #000;
+    font-size: 30px;
+    float: left;
+    padding-left: 20px;
+    padding-top: 20px;
+
+}
+
+.inner_membership_container button {
+    border: 1px solid #000;
+    padding: 10px 40px;
+}
+
+
+.toggle_button_div {
+    margin-top: 11%;
+    margin-right:276px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+    height: 47px;
+    text-align: center;
+    padding:0%;
+    background-color: #000000;
+    transition:linear 1s;
+    border: 1px solid #000;
+    /* border: none; */
+    /* overflow:hidden ; */
+    border-radius: 20px;
+}
+
+.toggle_button_div .btn_1{
+    background-color: #E3DAD2;
+    color: #000;
+    border: none;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 12px 39px;
+    transition:linear 0.2s;
+}
+
+.toggle_button_div .btn_2{
+    /* background-color: #E3DAD2; */
+    border-top:1px solid #000; 
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 12px 57px;
+    transition:linear 0.2s;
+}
+
+.price_title {
+    color: #000;
+    float: left;
+    padding-left: 20px;
+}
+
+.price_desc {
+    margin-top: 10px;
+    color: #000;
+}
+
+.inner_membership_container hr {
+    margin-top: 10px;
+    background-color: #000;
+    height: 3px;
+    width: 420px;
+}
+
+.list_container {
+    height: 300px;
+
+}
+
+.list_container p {
+    float: left;
+    padding: 2px 0px;
+    padding-left: 20px;
+    /* width: 256px; */
+    color: #000;
+    /* list-style: none; */
+    /* text-align: center; */
+}
+
+.list_container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    float: left;
+    width: 600px;
+}
+
+
+
+.question_title {
+    float: left;
+    /* margin: 30px 0px; */
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.m_get_start_btn {
+    border: none;
+    padding: 10px 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    /* margin-left: 50px; */
+    margin-left: 20px;
+}
+
+.m_get_start_btn:hover{
+    scale: 0.9;
+    transition: 0.4s;
+    border: 1px solid #000000;
+    color: #000;
+    background-color: #fff;
+    box-shadow: 2px 3px 5px #000000b3
+}
+
+.m_book_call_btn{
+    border: 1px solid #000;
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin-left: 20px;
+    color: #000;
+}
+
+.m_book_call_btn:hover{
+    scale: 0.9;
+    transition: 0.4s;
+    color: #fff;
+    background-color: #000;
+    box-shadow: 2px 3px 5px #000000b3;
+    border: 1px solid #dadada;
+}
+
+.btn_div{
+    position: absolute;
+    bottom: -10px;
+    display: flex;
+    color: #000;
+}
+
+.blink {
+    animation: smoothBlink 0.5s;
+}
+
+@keyframes smoothBlink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .membership_container {
+        margin: 6% 0px;
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        justify-content: space-around;
+        padding: 0px 5%;
+    }
+
+    .price_desc {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 12px;
+        margin-right: 270px;
+        color: #000;
+    }
+
+    .inner_membership_container hr {
+        margin-right: 270px;
+    }
+    
+
+    .inner_membership_container {
+        height: 500px;
+        width: 330px;
+        background-color: #fff;
+        border-radius: 10px;
+        position: relative;
+    }
+    
+    .inner_membership_container button {
+        border: 1px solid #000;
+        margin-top: 10px;
+        padding: 5px 20px;
+    }
+    
+    
+    .inner_membership_container hr {
+        margin-top: 10px;
+        background-color: #000;
+        height: 3px;
+        width: 300px;
+    }
+    
+    .list_container {
+        height: 300px;
+    
+    }
+    
+    .list_container p {
+        float: left;
+        padding: 2px 0px;
+        padding-left: 20px;
+        color: #000;
+    }
+    
+    .m_get_start_btn {
+        border: none;
+        padding: 5px 30px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 10px;
+        margin-left: 20px;
+        font-size: 10px;
+    }
+    
+    .m_book_call_btn{
+        border: 1px solid #000;
+        padding: 5px 30px;
+        border-radius: 10px;
+        margin-left: 20px;
+        font-size: 10px;
+
+    }
+    
+    .btn_div{
+        position: absolute;
+        bottom: -10px;
+        display: flex;
+    }
+    
+    .btn_div b{
+        margin-top: 10px;
+    }
+    .toggle_button_div {
+        margin-top: 10%;
+        margin-right:275px;
+        margin-left: 10px;
+        margin-bottom: 2px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        /* justify-content: space-between; */
+        text-align: center;
+        padding:0%;
+        background-color: #000000;
+        transition:linear 1s;
+        border: 1px solid #000;
+        /* border: none; */
+        /* overflow:hidden ; */
+        border-radius: 20px;
+    }
+    
+    .toggle_button_div .btn_1{
+        background-color: #E3DAD2;
+        border: none;
+        font-weight: 600;
+        border-radius: 20px;
+        padding:10px 39px;
+        transition:  0.2s;
+        margin-bottom: 10px;
+    }
+    
+    .toggle_button_div .btn_2{
+        /* background-color: #E3DAD2; */
+        border-top:1px solid #000; 
+        color: #fff;
+        border: none;
+        font-weight: 600;
+        border-radius: 20px;
+        padding: 10px 57px;
+        transition:  0.2s;
+        margin-bottom: 10px;
+
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .membership_container {
+        margin: 6% 0px;
+        display: grid;
+        grid-template-columns: auto ;
+        justify-content: space-around;
+        padding: 0px 5%;
+    }
+
+    .inner_membership_container {
+        height: 500px;
+        width: 330px;
+        background-color: #fff;
+        border-radius: 10px;
+        position: relative;
+        margin-top: 20px;
+    }
+    
+    .inner_membership_container button {
+        border: 1px solid #000;
+        margin-top: 10px;
+        padding: 5px 20px;
+    }
+    
+    
+    .inner_membership_container hr {
+        margin-top: 10px;
+        background-color: #000;
+        height: 3px;
+        width: 300px;
+    }
+    
+    .list_container {
+        height: 300px;
+    
+    }
+    
+    .list_container p {
+        float: left;
+        padding: 2px 0px;
+        padding-left: 20px;
+        color: #000;
+    }
+    
+    .m_get_start_btn {
+        border: none;
+        padding: 5px 30px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 10px;
+        margin-left: 20px;
+        font-size: 10px;
+    }
+    
+    .m_book_call_btn{
+        border: 1px solid #000;
+        padding: 5px 30px;
+        border-radius: 10px;
+        margin-left: 20px;
+        font-size: 10px;
+
+    }
+    
+    .btn_div{
+        position: absolute;
+        bottom: -10px;
+        display: flex;
+    }
+    
+    .btn_div b{
+        margin-top: 10px;
+    }
+
+    .toggle_button_div {
+        margin-right:276px;
+    }
+}
+
+@media screen and (max-width: 352px) {
+    .membership_container {
+        margin: 6% 0px;
+        padding: 0px 1%;
+    }
+    
+    .call_container {
+        height: 500px;
+        width: 302px;
+    }
+    
+    .inner_membership_container {
+        height: 500px;
+        width: 295px;
+    }
+
+    .toggle_button_div {
+        margin-top: 11%;
+        margin-right:330px;
+    }
+    
+    .toggle_button_div .btn_1{
+        padding: 12px 32px;
+    }
+    
+    .toggle_button_div .btn_2{
+        padding: 12px 37px;
+    }
+
+    .price_desc {
+        font-size: 8px;
+    }
+
+    .inner_membership_container hr {
+        margin-right: 300px;
+    }
+    
+    
+}
